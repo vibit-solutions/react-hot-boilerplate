@@ -1,0 +1,8 @@
+# file system related files
+.DS_Store
+
+node_modules/
+
+# editor related folders
+.idea
+.vscode
