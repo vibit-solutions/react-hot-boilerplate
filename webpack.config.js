@@ -13,9 +13,9 @@ const buildPath = 'build';
 const publicPath = `${HOST}:${PORT}/`;
 
 const webpackConfig = {
+  mode: 'development',
   devtool: 'eval-source-map',
   entry: [
-    'react-hot-loader/patch',
     './src/styles.scss',
     './src/client',
   ],
@@ -54,6 +54,7 @@ const webpackConfig = {
       {
         test: /\.js(x?)$/,
         use: 'babel-loader',
+        include: /src/,
       },
       {
         test: /\.(s?)css$/,

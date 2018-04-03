@@ -6,7 +6,7 @@ module.exports = () => ({
         'Chrome >= 4',
         'Firefox >= 2',
         'Explorer >= 8',
-      ]
+      ],
     },
-  }
+  },
 });
